@@ -1,0 +1,4 @@
+input/*_log
+input/*.csv
+output/*.csv
+.ipynb_checkpoints

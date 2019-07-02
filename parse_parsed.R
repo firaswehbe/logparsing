@@ -14,3 +14,5 @@ mydata = read.csv('output/parsed.csv', stringsAsFactors = FALSE,
 mysummary = mydata %>% select(year_p,month_p,date_p,ip) %>%
   group_by(year_p,month_p,date_p) %>%
   summarise(hits = n(), hits_unique_ip = n_distinct(ip))
+
+write.csv(mysummary,'output/summary.csv',row.names = FALSE)
